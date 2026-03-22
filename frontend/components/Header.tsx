@@ -1,11 +1,11 @@
 import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "@/store";
+import { RootState, AppDispatch } from "@/store";
 import { logoutUser } from "@/store/slices/authSlice";
 import { useRouter } from "next/navigation";
 
 export default function Header() {
   const { user } = useSelector((state: RootState) => state.auth);
-  const dispatch = useDispatch<any>();
+  const dispatch = useDispatch<AppDispatch>();
   const router = useRouter();
 
   const handleLogout = () => {
