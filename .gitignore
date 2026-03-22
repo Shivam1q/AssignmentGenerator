@@ -1,0 +1,17 @@
+# Root dependencies
+node_modules/
+
+# Child project artifacts (as fallback)
+backend/node_modules/
+frontend/node_modules/
+frontend/.next/
+
+# Environment files
+.env
+.env.local
+
+# Data / Uploads
+backend/uploads/
+
+# System files
+.DS_Store
